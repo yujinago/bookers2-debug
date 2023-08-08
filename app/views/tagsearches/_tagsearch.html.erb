@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+    <%= form_with url: tagsearches_search_path, local: true, method: :get do |f| %>
+        <%= f.text_field :content %>
+        <%= f.submit "タグ検索", class: "btn-sm btn-primary" %>
+    <% end %>
+<% end %>
